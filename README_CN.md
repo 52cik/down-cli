@@ -1,25 +1,24 @@
 # down-cli
 
-> Command-line tool for downloading resources by directory
+> 按目录下载资源的命令行工具
 
-[中文说明](/README_CN.md)
 
-## Installation
+## 安装
 
-Prerequisites: Node.js (>=4.x, 6.x preferred), npm version 3+
+环境依赖: Node.js (>=4.x, 6.x 优先), npm 3+ 版本
 
 ```
 $ npm i -g down-cli
 ```
 
 
-## Usage
+## 使用
 
 ```
 $ down list.txt
 ```
 
-The `list.txt` file format is as follows:
+列表文件 `list.txt` 内容格式如下:
 
 ```
 https://c1.mifile.cn/f/i/15/stat/js/xmst.js
@@ -35,9 +34,9 @@ https://c1.mifile.cn/f/i/17/site/site-weixin.png
 https://c1.mifile.cn/f/i/2014/cn/loading.gif
 ```
 
-> Blank lines will be ignored.
+> 空行会被忽略。
 
-**Download the completed file tree.**
+**下载完成后的目录格式如下。**
 
 ```
 res
