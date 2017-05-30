@@ -1,12 +1,13 @@
 {
   "name": "down-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Command-line tool for downloading resources by directory",
   "main": "lib/main.js",
   "bin": {
     "down": "bin/down"
   },
   "scripts": {
+    "lint": "eslint lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/52cik/down-cli#readme",
   "dependencies": {
     "async": "^2.4.1",
+    "commander": "^2.9.0",
     "eventproxy": "^0.3.5",
     "mkdirp": "^0.5.1",
     "request": "^2.81.0"

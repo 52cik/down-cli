@@ -1,5 +1,16 @@
 #!/usr/bin/env node
 
-'use strict';
+const program = require('commander');
+const down = require('../lib/down');
+const pkg = require('../package');
 
-require('../lib/down');
+program
+  .version(pkg.version)
+  .usage('<file>')
+  .arguments('<file>')
+  .action(down)
+  .parse(process.argv);
+
+if (!program.args.length) {
+  program.help();
+}
